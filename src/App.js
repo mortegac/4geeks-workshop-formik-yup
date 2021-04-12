@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Container, Row, Col, Card } from "react-bootstrap";
+import "./App.css";
+import FormLogin from './components/form';
+import CardLogin from './components/cards';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className="mt-5">
+      <Row className="w-100 d-flex justify-content-center">
+        <Col xs="12" lg="8">
+        <CardLogin>
+          <FormLogin/>
+        </CardLogin>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
